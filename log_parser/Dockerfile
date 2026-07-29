@@ -1,6 +1,6 @@
 FROM alpine:3.24 as builder
 
-RUN apk update && apk add --no-cache procps gawk coreutils && \
+RUN apk update && apk add --no-cache procps gawk coreutils
 
 COPY log_parser.sh /usr/local/bin/log_parser.sh
 
